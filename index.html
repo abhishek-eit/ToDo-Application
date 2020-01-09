@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo application</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <style>
+        .card{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="margin-top:10px;">
+    
+    <div class="container">
+        <div class="card">
+            <h1>Tasks</h1>
+            <form class="form-group" id='form1'>
+                <label for="name"  class=''>New Task</label>
+                <input type="text" class='form-control' id='textField'>
+                <br>
+                <input type="submit" class='btn btn-primary' value='Add Task'>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+            <h3 class='text-primary'>Task List</h3>
+            <input type="filter" class='form-control' id='filter' placeholder='Search...'>
+            <br>
+            <ul class="list-group" id='taskList'></ul>
+            <br>
+            <button class="btn btn-danger" style='width:105px' id='clearBtn'>Clear Tasks</button>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS library -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
